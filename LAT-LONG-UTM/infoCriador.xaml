@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAT_LONG_UTM"
-        mc:Ignorable="d"
-        AllowsTransparency="True" WindowStyle="None" Title="InfoCriador" Height="120" Width="280" ResizeMode="NoResize" Opacity="0.95">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" WindowStyle="None" Title="InfoCriador" Height="120" Width="280" ResizeMode="NoResize" Opacity="0.95" BorderBrush="Gray" BorderThickness="1">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.35*"></ColumnDefinition>
