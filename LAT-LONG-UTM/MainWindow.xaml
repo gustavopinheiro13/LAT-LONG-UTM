@@ -63,9 +63,9 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button x:Name="bttFechar" Content="X" FontSize="13" Height="18" Width="18" Canvas.Right="3" Click="Fechar_Click" Opacity="0.7"/>
-        <Button x:Name="bttMinimizar" Content="-" Canvas.Top="0" FontSize="15" Height="18" Canvas.Right ="23"  Width="18" Click="Minimizar_Click" Opacity="0.7"/>
-        <Button x:Name="bttInfo" Content="i" FontSize="13" Height="18" Width="18" Canvas.Right="43" Opacity="0.7" Click="bttInfo_Click"/>
+        <Button x:Name="bttFechar" Content="X" FontSize="13" Height="18" Width="18" Canvas.Right="3" Click="Fechar_Click" Opacity="0.6"/>
+        <Button x:Name="bttMinimizar" Content="-" Canvas.Top="0" FontSize="15" Height="18" Canvas.Right ="23"  Width="18" Click="Minimizar_Click" Opacity="0.6"/>
+        <Button x:Name="bttInfo" Content="i" FontSize="13" Height="18" Width="18" Canvas.Right="43" Opacity="0.6" Click="bttInfo_Click"/>
 
     </Canvas>
 </Window>

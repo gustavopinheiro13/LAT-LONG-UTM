@@ -91,7 +91,7 @@ namespace LAT_LONG_UTM
 
         private void btCalcularUtmLatLong_Click(object sender, RoutedEventArgs e)
         {
-            if (txtbUtmEast.Text != "" && txtbLongitude.Text != "" && txtbUtmNorth.Text != "" && txtbUtmFuso.Text!= "")
+            if (txtbUtmEast.Text != "" && txtbUtmNorth.Text != "" && txtbUtmFuso.Text!= "")
             {
                 LatLngUTMConverter converter = new LatLngUTMConverter("WGS 84");
                 LatLngUTMConverter.UTMResult utm = new LatLngUTMConverter.UTMResult() { UTMEasting = coordenadaUtmDecimal(txtbUtmEast.Text), UTMNorthing = coordenadaUtmDecimal(txtbUtmNorth.Text), ZoneNumber = Convert.ToInt32(txtbUtmFuso.Text), ZoneLetter = cbbLetraFuso.SelectedItem.ToString() };
@@ -102,7 +102,6 @@ namespace LAT_LONG_UTM
             else
             {
                 txtResultadosUtmLatLong.Text = "Verifique o preenchimento dos dados";
-
             }
         }
 
