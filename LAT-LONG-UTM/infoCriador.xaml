@@ -1,0 +1,25 @@
+﻿<Window x:Class="LAT_LONG_UTM.infoCriador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAT_LONG_UTM"
+        mc:Ignorable="d"
+        AllowsTransparency="True" WindowStyle="None" Title="InfoCriador" Height="120" Width="280" ResizeMode="NoResize" Opacity="0.95">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtCriador" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,0" Text="Criador:" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBlock x:Name="txtNomeCriador" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,0" Text="Eng. Gustavo Henrique Pinheiro" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBlock x:Name="txtContato" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,0" Text="Email:" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBlock x:Name="txtEnderecoContato" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,0" Text="gustavopinheiroengcivil@gmail.com" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <Button x:Name="bttCriador" Content="OK" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="50" Click="bttCriador_Click"/>
+    </Grid>
+</Window>
