@@ -5,6 +5,12 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>LAT_LONG_UTM</RootNamespace>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>globe.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <Authors>Gustavo Henrique Pinheiro da Silva</Authors>
+    <Product>Conversor LAT-LONG-UTM</Product>
+    <Description>Conversor de Coordenadas UTM para Latitude-Longitude e vice-versa</Description>
+    <Copyright>Reservados</Copyright>
   </PropertyGroup>
 
 </Project>

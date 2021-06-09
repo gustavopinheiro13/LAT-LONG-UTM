@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAT-LONG-UTM", "LAT-LONG-UTM\LAT-LONG-UTM.csproj", "{A08CE6D8-1410-486B-A0AB-A113FA9860E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LAT-LONG-UTM", "LAT-LONG-UTM\LAT-LONG-UTM.csproj", "{A08CE6D8-1410-486B-A0AB-A113FA9860E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = Conversor de Coordenadas UTM para Latitude-Longitude e vice-versa
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A08CE6D8-1410-486B-A0AB-A113FA9860E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
