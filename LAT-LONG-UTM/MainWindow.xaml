@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAT_LONG_UTM"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True" WindowStyle="None" Title="Conversor Lat/Long/Utm" Height="250" Width="300" ResizeMode="NoResize" Opacity="0.95" BorderBrush="Gray" BorderThickness="0.3"
+        AllowsTransparency="True" WindowStyle="None" Title="Conversor Lat/Long/Utm" Height="250" Width="450" ResizeMode="NoResize" Opacity="0.95" BorderBrush="Gray" BorderThickness="0.3"
         >
 
     <Canvas Margin="1,1,1,1">
-        <TabControl x:Name="latlongutm" Margin="0,0,0,0" Height="247" Width="297">
+        <TabControl x:Name="latlongutm" Margin="0,0,0,0" Height="247" Width="447">
             <TabControl.Background>
                 <SolidColorBrush Color="White"/>
             </TabControl.Background>
@@ -60,6 +60,54 @@
                     <ComboBox x:Name="cbbLetraFuso" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Width="121" Margin="0,0,0,0" Foreground="Black" Background="White"/>
                     <Button x:Name="btCalcularUtmLatLong" Content="Calcular" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Click="btCalcularUtmLatLong_Click" Width="100"/>
 
+                </Grid>
+            </TabItem>
+            <TabItem Header="Lat.Long/XYZ">
+                <Grid Height="211">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox x:Name="txtbLatitudeXYZ" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtLatitudeXYZ" Grid.Column="0" HorizontalAlignment="Left" Margin="44,0,0,0" Text="Latitude (N)" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtbLongitudeXYZ" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtLongitudeXYZ" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" Text="Longitude (E)" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtbAltitudeXYZ" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtAltitudeXYZ" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" Text="Altitude (m)" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                    <Button x:Name="btCalcularLatLongXYZ" Content="Calcular" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="100" Click="btCalcularLatLongXYZ_Click"/>
+                    <TextBlock x:Name="txtObsLatLongXYZ" Grid.Row="3" HorizontalAlignment="Left" Text="*Usar formato GGºMM'SS.SS&quot;" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" FontWeight="Medium" FontSize="9" Cursor="AppStarting" Foreground="Red" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtResultadosLatLongXYZ" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Center" IsReadOnly="True" Margin="10,0,10,0" Grid.ColumnSpan="3" Background="#FFF9F8F8"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="XYZ/Lat.Long">
+                <Grid Height="211">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox x:Name="txtbXYZLatitude" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtXYZLatitude" Grid.Column="0" HorizontalAlignment="Left" Margin="44,0,0,0" Text="X (m)" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtbXYZLongitude" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtXYZLongitude" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" Text="Y (m)" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtbXYZAltitude" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                    <TextBlock x:Name="txtXYZAltitude" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" Text="Z (m)" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                    <Button x:Name="btCalcularXYZLatLong" Content="Calcular" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="100" Click="btCalcularXYZLatLong_Click"/>
+                    <TextBlock x:Name="txtObsXYZLatLong" Grid.Row="3" HorizontalAlignment="Left" Text="*Usar coordenadas em metros;" TextWrapping="Wrap" VerticalAlignment="Center" Height="20" FontWeight="Medium" FontSize="9" Cursor="AppStarting" Foreground="Red" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtResultadosXYZLatLong" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Center" IsReadOnly="True" Margin="10,0,10,0" Grid.ColumnSpan="3" Background="#FFF9F8F8"/>
                 </Grid>
             </TabItem>
         </TabControl>
