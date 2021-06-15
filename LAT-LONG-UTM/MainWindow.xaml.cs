@@ -214,7 +214,7 @@ namespace LAT_LONG_UTM
                 LatLngUTMConverter converter = new LatLngUTMConverter("WGS 84");
                 LatLngUTMConverter.LatLng latLng = new LatLngUTMConverter.LatLng() { Lat = coordenadaLatLongDecimal(txtbLatitudeXYZ.Text), Lng = coordenadaLatLongDecimal(txtbLongitudeXYZ.Text) };
                 coordenadaXYZ cordXYZ = converTerLatLongXYZ(latLng.Lat, latLng.Lng, Double.Parse(txtbAltitudeXYZ.Text.Replace(",","."), CultureInfo.InvariantCulture)) ;
-                string stringResultado = $"{(cordXYZ.x, 3)}X {Math.Round(cordXYZ.y, 3)}Y {Math.Round(cordXYZ.z,3)}Z";
+                string stringResultado = $"{Math.Round(cordXYZ.x, 3)}X {Math.Round(cordXYZ.y, 3)}Y {Math.Round(cordXYZ.z,3)}Z";
                 txtResultadosLatLongXYZ.Text = stringResultado;
             }
             else
